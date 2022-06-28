@@ -1,0 +1,22 @@
+import board 
+import neopixel
+import time
+
+led = neopixel.NeoPixel(board.NEOPIXEL, 10)
+
+led.brightness = 0.10
+
+while True:
+    for i in range(10):
+        led[i] = (120, 24, 234)
+        time.sleep(0.01)
+        #led[i] = (0,0, 0)
+    for i in range(10):
+        led[i] = (252,3,3)
+        time.sleep(0.5)
+        #led[i] = (0,0, 0)
+    for i in range(10):
+        led[i] = (0,0, 255)
+        time.sleep(0.02)
+        #led[i] = (0, 0,0)
+        
